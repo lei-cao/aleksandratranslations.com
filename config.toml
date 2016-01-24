@@ -1,0 +1,15 @@
+baseurl = "http://replace-this-with-your-hugo-site.com/"
+languageCode = "en-us"
+title = "Aleksandra Translations"
+theme = "hugo-base-theme"
+[params]
+    description = "Your professional translator in English, Spanish, Chinese, Polish"
+    mainIcon = "/img/at-logo.png"
+
+[[params.social]]
+    title = "twitter"
+    url = "https://twitter.com/karolinapakula"
+[[params.social]]
+    title = "linkedin"
+    url = "https://www.linkedin.com/in/karolina-pakula-9a002896"
+
