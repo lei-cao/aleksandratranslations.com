@@ -1,0 +1,137 @@
+{{ partial "header.html" . }}
+{{ partial "top-block.html" . }}
+  {{ range $index, $element :=  .Data.Pages.ByWeight }}{{ if eq .Section "post" }}
+
+    <div id="main">
+        <!-- Intro -->
+        {{ if modBool $index 2 }}<div id="intro" class="counterpoint">{{ else }}<div id="intro" class="point">{{ end}}
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-md-offset-3 text-center">
+                {{ if (isset .Params "icon") }}
+                    <i class="lead-icon icon-{{ .Params.icon }}"></i>
+                {{ end }}
+                <h2>{{ .Title }}</h2>
+                <p class="lead">
+                    {{ .Content }}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /Intro -->
+      {{ end }}
+      {{ if eq .Section "carousel" }}
+      <!-- /Point -->
+
+
+      <div class="callout">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+                {{ if (isset .Params "icon") }}
+                    <i class="callout-icon icon-{{ .Params.icon }}"></i>
+                {{ end }}
+                <p>{{ .Content }}</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-center">
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner owl-carousel">
+                    {{ range .Params.carousel }}
+                      <div class="item"> <blockquote><p>{{ .quote }}</p>&mdash; {{ .author }} <a href="{{ .url }}">{{ .quote_date }}</a></blockquote> </div>
+                    {{ end }}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /Point -->
+      {{ end }}
+    {{ end }}
+
+    </div>
+
+        <div id="action" class="call-to-action">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1 ">
+                        <h1 style="padding-bottom:.5em;" class="text-center">SERVICES</h1>
+                        <ul>
+                            <li>Assistance in Business trips</li>
+                            <li>Outsourcing new products in Chinese market</li>
+                            <li>Translations during Canton Fair and HK Expo</li>
+                            <li>Translations during Economic Conferences</li>
+                            <li>Tour guides</li>
+                            <li>Assistance in booking trips, hotels, cars</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div id="intro" class="counterpoint">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-10 col-md-offset-1 text-center">
+                <h2>ABOUT</h2>
+                  <p class="lead">
+                      We will assist you in business negotiations, developing your business
+           in China, during business negotiations or any time you simply need to
+           reply the mail in Chinese.
+           If you want to expand your business, enter Chinese market or find
+           new suppliers in China, contact us.
+                  </p>
+                  <p class="lead">
+                     Liao and Damek offer you super professional translations within the cultural context, which make your business negotiations successful.
+                  </p>
+                  <p class="lead">
+                      Marcin Damek – MA student in Chinese and Literature Studies at
+           University of Warsaw, president of the Sinological Reseach Circle of
+           University of Warsaw, Chinese Government Scholarship recipient.
+           During academic year 2014/2015 he took part in an advanced Chine
+           language course at Nanjing Normal University. He organized many
+           academic (conferences), cultural (Chinese Culture Day) and language
+           events (Shalong – interesting conversations with the Chinese). At his
+           1st year during BA studies he worked as a translator at China Expo
+           Poland international fair in Warsaw. Since then he is involved in
+           translation activities (both written and oral ones). In his free time he
+           expands his interests in Chinese philosophy as well as enjoys
+           swimming and mountain hiking
+                  </p>
+
+                  <p class="lead">
+                      Karolina Pakula- Sinologist, Chinese Translator and Chinese culture
+           lover.
+           She has been studying Chinese language and culture at University of
+           Warsaw and then felt in love with Chinese language, so she moved to
+           Canton and started intensive Chinese language training at Zhongshan
+           University (中山大学), where she has been studying for several years.
+           Karolina reached the most advanced Mandarin level as well as passed
+           Hanyu Shuiping Kaoshi (advanced level). Since then she is living in
+           China and working as a translator, helping Polish businessman in
+           entering Chinese market. Karolina has vast experience in business
+           negotiations and translations during Canton Fair and Hong Kong
+           Expo.
+                  </p>
+                  <h3> YOU ARE WELCOME TO CONTACT US!<br> </h3>
+                  <p class="lead">
+                      Marcin Damek<br>
+                      ＋48 696-422-009<br>
+                      E-mail: marcindamek1991@gmail.com<br>
+                  </p>
+                  <p class="lead">
+                      Karolina Pakula<br>
+                      +86 132-6839-6976<br>
+                      E-mail: liaokarolina@me.com<br>
+                  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /Call to Action -->
+
+{{ partial "footer.html" . }}
