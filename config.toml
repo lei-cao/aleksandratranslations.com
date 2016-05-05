@@ -125,17 +125,6 @@ googleAnalytics = ""
 
 		# All team member's pictures are stored under 'static/img/team'.
 		# Replace them with your own too.
-		[[params.team.members]]
-			img = "2.jpg"
-			name = "Marcin Damek"
-			position = "MA student in Chinese and Literature Studies at University of Warsaw, president of the Sinological Reseach Circle of University of Warsaw, Chinese Government Scholarship recipient. During academic year 2014/2015 he took part in an advanced Chine language course at Nanjing Normal University. He organized many academic (conferences), cultural (Chinese Culture Day) and language events (Shalong – interesting conversations with the Chinese). At his 1st year during BA studies he worked as a translator at China Expo Poland international fair in Warsaw. Since then he is involved in translation activities (both written and oral ones). In his free time he expands his interests in Chinese philosophy as well as enjoys swimming and mountain hiking"
-			email = "marcindamek1991@gmail.com"
-			phone = "＋48 696-422-009"
-			social = [
-				["fa-twitter", "#"],
-				["fa-facebook", "#"],
-				["fa-linkedin", "#"]
-			]
 
 		[[params.team.members]]
 			img = "1.jpg"
@@ -149,9 +138,21 @@ googleAnalytics = ""
 				["fa-linkedin", "https://www.linkedin.com/in/karolina-pakula-9a002896"]
 			]
 
+		[[params.team.members]]
+			img = "2.jpg"
+			name = "Marcin Damek"
+			position = "MA student in Chinese and Literature Studies at University of Warsaw, president of the Sinological Reseach Circle of University of Warsaw, Chinese Government Scholarship recipient. During academic year 2014/2015 he took part in an advanced Chine language course at Nanjing Normal University. He organized many academic (conferences), cultural (Chinese Culture Day) and language events (Shalong – interesting conversations with the Chinese). At his 1st year during BA studies he worked as a translator at China Expo Poland international fair in Warsaw. Since then he is involved in translation activities (both written and oral ones). In his free time he expands his interests in Chinese philosophy as well as enjoys swimming and mountain hiking"
+			email = "marcindamek1991@gmail.com"
+			phone = "＋48 696-422-009"
+			social = [
+				["fa-twitter", "#"],
+				["fa-facebook", "#"],
+				["fa-linkedin", "#"]
+			]
+
 	# Client section
     [params.clients_list]
-        enable = true
+        enable =false
 
     	# All the clients' logos are stored under 'static/img/logos'.
     	# Replace them with your clients's logos.
