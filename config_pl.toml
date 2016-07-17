@@ -1,0 +1,226 @@
+#[params]
+#    description = "We offer you complex and professional oral and written Chinese-Polish–English translations covering business, technical and medical fields. All the translations are checked by native speakers."
+#    mainIcon = "/img/at-logo.png"
+
+# Site settings
+baseurl = "http://aleksandratranslations.com/pl/"
+languageCode = "pl-PL"
+title = "Aleksandra Translations"
+theme = "hugo-agency-theme"
+canonifyurls = true
+# Enter your tracking code to enable Google Analytics
+googleAnalytics = ""
+
+[params]
+
+	# You can use Markdown syntax for urls [text](//url.to/source) or
+	# most longer texts.
+	#
+	# All icons using Fontawesome's icon font. Look at fortawesome.github.io/Font-Awesome/icons/
+	# for more icons. The icons are represented by their corresponding
+	# CSS class.
+
+	# To provide some metadata for search engines feel free to add a few
+    # information about you and your website.
+	name = "Your name"
+    description = "Oferujemy państwu profesjonalne ustne i pisemne tlumaczenia z języka polskiego na Chiński i z języka Chińskiego na polski, a także pośrednictwo w Eksporcie i Imporcie towarów między Polską a Chinami."
+
+	# Since this template is static, the contact form uses www.formspree.io as a
+	# proxy. The form makes a POST request to their servers to send the actual
+	# email. Visitors can send up to a 1000 emails each month for free.
+    #
+    # What you need to do for the setup?
+    #
+    # - set your email address under 'email' below
+    # - upload the generated site to your server
+    # - send a dummy email yourself to confirm your account
+    # - click the confirm link in the email from www.formspree.io
+    # - you're done. Happy mailing!
+	email = "liaokarolina@me.com"
+
+
+	# Navigation
+	[params.navigation]
+		brand = "Aleksandra Translations"
+		services = "NASZE USŁUGI"
+		portfolio = "WPROWADZENIE"
+		team = "NASZ ZESPÓŁ"
+		contact = "ZAPRASZAMY DO WSPÓŁPRACY"
+
+    # Add custom links. Those can be pre- and postpended to the default menu above.
+    # Use the weight attribute to order your custom links. Uncomment the example
+    # below and replace the values with your own.
+
+    # prepended links
+    #[[menu.prepend]]
+    #    url = "http://gohugo.io"
+    #    name = "Hugo"
+    #    weight = 10
+
+    # postpended links
+    [[menu.postpend]]
+        #url = "http://gohugo.io"
+        #name = "External link"
+        #weight = 10
+
+
+	# Hero section
+	[params.hero]
+		# To change the background image of the hero, replace 'header-bg.jpg' in
+		# the 'static/img' folder.
+		title = "Aleksandra Translations"
+		subtitle = "Your professional translator in English, Chinese, Polish"
+		#buttonText = "Tell me more"
+
+
+	# Services section
+	[params.services]
+        enable = true
+		title = "NASZE USŁUGI"
+		subtitle = "Oferujemy państwu profesjonalne ustne i pisemne tlumaczenia z języka polskiego na Chiński i z języka Chińskiego na polski, a także pośrednictwo w Eksporcie i Imporcie towarów między Polską a Chinami."
+
+        [[params.services.row]]
+
+            [[params.services.row.list]]
+                title = "Pomoc we wprowadzaniu produktów polskich na rynek Chiński"
+            [[params.services.row.list]]
+                title = "Badania rynku i pomoc w szukaniu dostawców"
+            [[params.services.row.list]]
+                title = "Prowadzenie korespondencji z klientami i fabrykami w językach Polskim, Chińskim, Angielskim."
+            [[params.services.row.list]]
+                title = "Tłumaczenia stron internetowych"
+            [[params.services.row.list]]
+                title = "łumaczenia na Targach Kantońskich, a także EXPO w Hong Kongu"
+            [[params.services.row.list]]
+                title = "Pośrednictow w Imporcie i Eksporcie Towarów z Chin"
+            [[params.services.row.list]]
+                title = "Tłumaczenia podczas spotkań biznesowych i negocjaci cen"
+            [[params.services.row.list]]
+                title = "Kontrola jakości towarów zamówionych w Chinach"
+            [[params.services.row.list]]
+                title = "Odbiór z lotniska, pomoc w rezerwacji hoteli"
+            [[params.services.row.list]]
+                title = "Asystowanie w podróżach turystycznych i rekreacyjnych na terenie Chin"
+
+	# Portfolio section
+	[params.portfolio]
+        enable = true
+		# All projects defined in their own files. You can find example projects
+		# at 'exampleSite/data/projects'. Copy the 'projects' folder into the 'data' directory
+		# at the root of this Hugo site.
+		# For more informtion take a look at the README.
+		title = "WPROWADZENIE"
+		subtitle = "Oferujemy państwu profesjonalne ustne i pisemne tlumaczenia z języka polskiego na Chiński i z języka Chińskiego na polski, a także pośrednictwo w Eksporcie i Imporcie towarów między Polską a Chinami. Zakres tłumaczeń pokrywa wszystkie dziedziny i jest wykonywany przez osoby, których językiem ojczystym jest język Chiński."
+        desc = ""
+
+		[params.portfolio.modal]
+            client = "Client"
+            date = "Date"
+            category = "Category"
+            buttonText = "Close project"
+
+	# Team section
+	[params.team]
+        enable = true
+		title = "NASZ ZESPÓŁ"
+		subtitle = ""
+
+		# All team member's pictures are stored under 'static/img/team'.
+		# Replace them with your own too.
+
+		[[params.team.members]]
+			img = "1.jpg"
+			name = "Karolina Pakula"
+			position = "Zajmuje się tłumaczeniami ekonomicznymi i medycznymi, ma też bogate doświadczenie jako tłumacz na targach Kantońskich i EXPO w Hong kongu. Studiowała chiński na Uniwersytecie Sun Yat-Sena, gdzie dotarła do najwyższego poziomu językowego, a wcześniej studiowała na Wydziale Sinologii Uniwersytetu Warszawskiego. Mieszka w Chinach od prawie 4 lat. Jest związana z Chinami nie tylko zawodowo, ale również w wolnym czasie pasjonuje się kulturą i literatura Chińską"
+			email = "liaokarolina@me.com"
+			phone = "+86 132-6839-6976"
+			social = [
+				["fa-twitter", "https://twitter.com/karolinapakula"],
+				["fa-facebook", "#"],
+				["fa-linkedin", "https://www.linkedin.com/in/karolina-pakula-9a002896"]
+			]
+
+		[[params.team.members]]
+			img = "2.jpg"
+			name = "Marcin Damek"
+			position = "Student sinologii II roku mgr na Uniwersytecie Warszawskim, prezes Sinologicznego Koła Naukowego UW,  stypendysta rządu chińskiego. W roku 2014/2015 uczęszczał na kurs języka chińskiego na poziomie zaawansowanym na Uniwersytecie Pedagogicznym w Nankninie. Organizator licznych wydarzeń: naukowych (konferencje), kulturalnych (dni kultury chińskiej),  i językowych ( „Shalong” – ciekawe spotkania z Chińczykami).  Już od I roku studiów licencjackich brał udział jako tłumacz w targach China Expo Poland w Warszawie i od tego czasu podejmuje prace tłumaczeniowe (pisemne i ustne). W wolnej chwili interesuje się filozofią chińską, pływaniem oraz chodzeniem po górach."
+			email = "marcindamek1991@gmail.com"
+			phone = "＋48 696-422-009"
+			social = [
+				["fa-twitter", "#"],
+				["fa-facebook", "#"],
+				["fa-linkedin", "#"]
+			]
+
+	# Client section
+    [params.clients_list]
+        enable =false
+
+    	# All the clients' logos are stored under 'static/img/logos'.
+    	# Replace them with your clients's logos.
+    	[[params.clients]]
+    		logo = "envato.jpg"
+    		link = "#"
+
+    	[[params.clients]]
+    		logo = "designmodo.jpg"
+    		link = "#"
+
+    	[[params.clients]]
+    		logo = "themeforest.jpg"
+    		link = "#"
+
+    	[[params.clients]]
+    		logo = "creative-market.jpg"
+    		link = "#"
+
+
+	# Contact section
+	[params.contact]
+        enable = true
+		title = "ZAPRASZAMY DO WSPÓŁPRACY"
+		subtitle  = ""
+		buttonText = "Send message"
+
+		# 'warning' defines error messages for invalid inputs
+		[params.contact.form.name]
+			text = "Your Name *"
+			warning = "Please enter your name."
+
+		[params.contact.form.email]
+			text = "Your Email *"
+			warning = "Please enter your email address."
+
+		[params.contact.form.phone]
+			text = "Your Phone *"
+			warning = "Please enter your phone number."
+
+		[params.contact.form.message]
+			text = "Your Message *"
+			warning = "Please enter a message."
+
+
+	# Footer section
+	[params.footer]
+        enable = false
+		copyright = "© 2016 Aleksandra Translations"
+
+		[[params.footer.social]]
+			icon = "fa-twitter"
+			link = "#"
+
+		[[params.footer.social]]
+			icon = "fa-facebook"
+			link = "#"
+
+		[[params.footer.social]]
+			icon = "fa-linkedin"
+			link = "#"
+
+		#[[params.footer.quicklinks]]
+		#	text = "Privacy Policy"
+		#	link = "#"
+
+		#[[params.footer.quicklinks]]
+		#	text = "Terms of Use"
+		#	link = "#"

@@ -870,3 +870,14 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #fed136;
 }
+
+.lang-flag {
+}
+
+.nav>li.lang-flag>a {
+    padding: 15px 5px;
+}
+
+.lang-flag img {
+    width: 32px;
+}
